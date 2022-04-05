@@ -1,17 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>First Azure Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alec Design</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet">
+    <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>
+
+        window.onscroll = function () {
+            scrollRotate();
+        };
+
+        function scrollRotate() {
+            let image = document.querySelector(".bg-move");
+            image.style.transform = "rotate("+ window.pageYOffset/2.5 + "deg)";
+
+            let image2 = document.querySelector(".bg-move2");
+            image2.style.transform = "rotate("+ -window.pageYOffset/2.5 + "deg)";
+
+            let image3 = document.querySelector(".bg-move3");
+            image3.style.transform = "rotate("+ window.pageYOffset/2.5 + "deg)";
+
+            // let nav = document.querySelector(".navbar");
+            // nav.style.background = "purple";
+        }
+
+
+
+    
+
+
+    </script>
+  
+  
 </head>
-
 <body>
-  <main>
-    <h1>Azure Static Web App</h1>
-  </main>
-</body>
 
+    
+
+    <div id="container">
+
+        <nav class="navbar navbar-expand-sm navbar-dark fixed-top ">
+            <a class="navbar-brand" href="index.html"><img width="100px" src="images/designName.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">HOME<span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="#anchor1">ABOUT</a>
+                <a class="nav-item nav-link" href="#anchor2">MY WORK</a>
+                <a class="nav-item nav-link" href="#anchor3">CONTACT</a>
+              </div>
+            </div>
+          </nav>
+
+          <div class="row align-items-center">
+            <div class="col-lg-6">
+              <div id="heading-group" class=" d-lg-block mt-5">
+                  <h1>Alec McFarlin</h1>
+                  <h2>web design<span> / </span>digital marketing</h2>
+                 
+              </div>
+          </div>
+
+          <div class="col-lg-6">
+            <figure>
+                <img id="landingImg" class="img-fluid"  src="images/latpopBetter.png" alt="">
+            </figure>
+        </div>
+    
+          </div>
+        
+    </div>
+
+    <div  id="contentBox" >
+      
+
+      <div id="anchor1" class="row text-center">
+        <div class="col">
+          <h1 class="intro">ABOUT</h1>
+        </div>
+       
+      </div>
+
+  
+      <div class="row align-items-center">
+          <div class="col-lg-12">
+            <div id="heading-group" class="text-center d-lg-block mt-5">
+              <div class="col">
+
+                <div class="bg-move">
+                  <img id="blueGear" src="images/gearOne.png" alt="">
+                </div>
+
+                <div class="bg-move2">
+                  <img id="greenGear" src="images/gearTwo.png" alt="">
+                </div>
+
+                <div class="bg-move3">
+                  <img id="purpleGear" src="images/gearThree.png" alt="">
+                </div>
+
+                <div class="spacer">
+                  <h1  id="aboutHeading">HELLO</h1>
+                  <p >I'm Alec. a studying web designer/digital marketer based in the Des Moines, IA area. I have discovered a passion for web design and love to create. I am excitingly working towards a degree to further explore what web design has to offer!</p>
+                </div>
+                
+
+
+                  <div class="buble spacer2" id="design">
+                    <h1 >DESIGN WHAT YOU WANT</h1>
+                    <hr>
+                    <p >I like to keep things simple, My goals are to utilize the skills I have with color schemes, typography, site structure, and tools like Adobe Creative Cloud to capture your brand's image and convey the message that you want to send. </p>
+                  </div>
+                
+
+                  <div class="buble spacer2" id="develop">
+                    <h2 >DEVELOP WHAT YOU NEED</h2>
+                    <hr>
+                    <p >I'm a developer, so I know how to build and create your website to run smoothly and function properly without errors. I can develop your site with all of the latest technologies that will make your site top of the line. </p>
+                  </div>
+                  
+              </div>
+          </div>
+              </div>
+
+             
+      </div>
+
+    </div>
+
+  
+    
+    <div id="aboutBox">
+      <div id="anchor2" class="row text-center">
+        <div class="col">
+          <h1 class="intro">MY WORK</h1>
+        </div>
+      </div>
+      <div class="row mt-3 justify-content-center">
+
+        
+        <a class="projectContainerOne col-sm-10 mb-s-4 col-md-5" href="portfolio/priorityPlumbing/" target="_blank">
+        </a>
+        
+        <a class="col-sm-10 col-md-5  projectContainerTwo" href="portfolio/coffeeHouse/" target="_blank">
+        </a>
+
+   
+      </div>
+       
+      <div class="row mt-3 justify-content-center">
+        
+        <a class="col-sm-10 mb-s-4 col-md-5  projectContainerThree" href="portfolio/onlineStore/" target="_blank"></a>
+       
+        <a class="col-sm-10 col-md-5 projectContainerFour" href="portfolio/recipeManager/recipeManager/index.php" target="_blank"></a>
+
+      </div>
+    </div>
+
+  
+
+    <div id="contactBox">
+      <div id="anchor3" class="row ">
+        <div class="col">
+          <h1 class="intro text-center">CONTACT</h1>
+        </div>
+            <main id="contact">
+              <form id="contactForm" name="contactForm" method="post" action="formHandler.php" class="col justify-content-center">
+                  <div class="row">
+                      <div class="form-group col-6 ">
+                          <label for="firstName">First Name:</label>
+                          <input class="form-control" type="text" name="firstName" id="firstName" placeholder="John">
+                      </div>
+  
+                      <div class="form-group col-6 mb-5">
+                          <label for="lastName">Last Name:</label>
+                          <input class="form-control" type="text" name="lastName" id="lastName" placeholder="Smith">
+                      </div>
+                  </div>  
+  
+                  <div class="form-group mb-5">
+                      <label for="emailInput">Email address:</label>
+                      <input type="email" class="form-control" id="emailInput" name="emailInput" placeholder="name@example.com">
+                  </div>
+                  
+                  <div class="form-group mb-5">
+                      <label for="contactReason">Please select a reason for contact: </label>
+                      <select class="form-control" id="contactReason" name="contactReason">
+                          <option>...</option>
+                          <option>General Inquiry</option>
+                          <option>Freelance</option>
+                          <option>Academic Questions</option>
+                      </select>
+                  </div>
+  
+                  <div class="form-group">
+                      <label for="messageArea">Message</label>
+                      <textarea class="form-control" id="messageArea" name="messageArea" rows="3"></textarea>
+                  </div>
+  
+                  <div class="form-group-footer row justify-content-center mt-5">
+                      <input class="col-4 col-md-2 mr-4 mr-md-5 form-control" type="reset" value="Reset" id="reset">
+                      <input class="col-4 col-md-2 form-control" type="submit" id="submit" value="Submit">
+                  </div>
+  
+              </form>
+          </main> 
+        
+
+         
+        </div>
+      
+    </div>
+    
+
+
+
+  <footer>
+    <p>copyright 2022 Alec Design</p>
+  </footer>
+
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c185c896ce.js" crossorigin="anonymous"></script>
+</body>
 </html>
